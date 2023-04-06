@@ -29,7 +29,7 @@ repositories {
 }
 
 dependencies {
-    api("com.whichlicense:seeker:0.0.0-SNAPSHOT")
+    implementation("com.whichlicense:seeker:0.0.0-SNAPSHOT")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.2")
     testImplementation("org.junit.jupiter:junit-jupiter-params:5.9.2")
     testImplementation("org.assertj:assertj-core:3.24.2")
@@ -48,8 +48,8 @@ tasks.getByName<Test>("test") {
 
 publishing {
     publications {
-        create<MavenPublication>("licenses") {
-            artifactId = "licenses"
+        create<MavenPublication>("license") {
+            artifactId = "license"
             from(components["java"])
             versionMapping {
                 usage("java-api") {
@@ -111,7 +111,7 @@ signing {
         val signingKey = System.getenv("PKG_SIGNING_KEY")
         val signingPassword = System.getenv("PKG_SIGNING_PW")
         useInMemoryPgpKeys(signingKey, signingPassword)
-        sign(publishing.publications["licenses"])
+        sign(publishing.publications["license"])
     }
 }
 
