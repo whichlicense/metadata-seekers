@@ -4,4 +4,4 @@
  *
  * SPDX-License-Identifier: Apache-2.0
  */
-package com.whichlicense.metadata.seeker.licenses;
+package com.whichlicense.metadata.seeker.license;

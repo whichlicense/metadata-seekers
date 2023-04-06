@@ -9,6 +9,6 @@ import com.whichlicense.metadata.seeker.MetadataSeeker;
 import com.whichlicense.metadata.seeker.readme.ReadmeSeeker;
 
 module whichlicense.seeker.readme {
-    requires whichlicense.seeker;
+    requires transitive whichlicense.seeker;
     provides MetadataSeeker with ReadmeSeeker;
 }

@@ -6,9 +6,9 @@
  */
 
 import com.whichlicense.metadata.seeker.MetadataSeeker;
-import com.whichlicense.metadata.seeker.licenses.LicenseSeeker;
+import com.whichlicense.metadata.seeker.license.LicenseSeeker;
 
-module whichlicense.seeker.readme {
-    requires whichlicense.seeker;
+module whichlicense.seeker.license {
+    requires transitive whichlicense.seeker;
     provides MetadataSeeker with LicenseSeeker;
 }

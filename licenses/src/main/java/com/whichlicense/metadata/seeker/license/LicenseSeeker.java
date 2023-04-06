@@ -4,7 +4,7 @@
  *
  * SPDX-License-Identifier: Apache-2.0
  */
-package com.whichlicense.metadata.seeker.licenses;
+package com.whichlicense.metadata.seeker.license;
 
 import com.whichlicense.metadata.seeker.MetadataSeeker;
 import com.whichlicense.metadata.seeker.MetadataSourceType;
