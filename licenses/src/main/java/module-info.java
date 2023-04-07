@@ -10,5 +10,6 @@ import com.whichlicense.metadata.seeker.license.LicenseSeeker;
 
 module whichlicense.seeker.license {
     requires whichlicense.seeker;
+    exports com.whichlicense.metadata.seeker.license;
     provides MetadataSeeker with LicenseSeeker;
 }

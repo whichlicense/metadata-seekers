@@ -10,5 +10,6 @@ import com.whichlicense.metadata.seeker.readme.ReadmeSeeker;
 
 module whichlicense.seeker.readme {
     requires whichlicense.seeker;
+    exports com.whichlicense.metadata.seeker.readme;
     provides MetadataSeeker with ReadmeSeeker;
 }
