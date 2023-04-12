@@ -16,3 +16,23 @@ updates:
     directory: "/gitignore/"
     schedule:
       interval: "daily"
+  - package-ecosystem: "gradle"
+    directory: "/rat/"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "gradle"
+    directory: "/gitattributes/"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "gradle"
+    directory: "/gitmodules/"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "gradle"
+    directory: "/notices/"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "gradle"
+    directory: "/gitrepo/"
+    schedule:
+      interval: "daily"
