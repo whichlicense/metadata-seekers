@@ -12,3 +12,7 @@ updates:
     directory: "/licenses/"
     schedule:
       interval: "daily"
+  - package-ecosystem: "gradle"
+    directory: "/gitignore/"
+    schedule:
+      interval: "daily"
