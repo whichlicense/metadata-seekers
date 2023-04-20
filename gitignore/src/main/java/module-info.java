@@ -9,7 +9,7 @@ import com.whichlicense.metadata.seeker.MetadataSeeker;
 import com.whichlicense.metadata.seeker.gitignore.GitignoreSeeker;
 
 module whichlicense.seeker.gitignore {
-    requires transitive whichlicense.seeker;
+    requires whichlicense.seeker;
     exports com.whichlicense.metadata.seeker.gitignore;
     provides MetadataSeeker with GitignoreSeeker;
 }

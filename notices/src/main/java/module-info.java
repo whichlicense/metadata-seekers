@@ -9,7 +9,7 @@ import com.whichlicense.metadata.seeker.MetadataSeeker;
 import com.whichlicense.metadata.seeker.notice.NoticeSeeker;
 
 module whichlicense.seeker.notice {
-    requires transitive whichlicense.seeker;
+    requires whichlicense.seeker;
     exports com.whichlicense.metadata.seeker.notice;
     provides MetadataSeeker with NoticeSeeker;
 }
