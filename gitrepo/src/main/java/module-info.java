@@ -9,7 +9,7 @@ import com.whichlicense.metadata.seeker.MetadataSeeker;
 import com.whichlicense.metadata.seeker.gitrepo.GitrepoSeeker;
 
 module whichlicense.seeker.gitrepo {
-    requires whichlicense.seeker;
+    requires transitive whichlicense.seeker;
     exports com.whichlicense.metadata.seeker.gitrepo;
     provides MetadataSeeker with GitrepoSeeker;
 }

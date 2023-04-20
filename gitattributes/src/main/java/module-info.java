@@ -9,7 +9,7 @@ import com.whichlicense.metadata.seeker.MetadataSeeker;
 import com.whichlicense.metadata.seeker.gitattributes.GitattributesSeeker;
 
 module whichlicense.seeker.gitattributes {
-    requires whichlicense.seeker;
+    requires transitive whichlicense.seeker;
     exports com.whichlicense.metadata.seeker.gitattributes;
     provides MetadataSeeker with GitattributesSeeker;
 }

@@ -9,7 +9,7 @@ import com.whichlicense.metadata.seeker.MetadataSeeker;
 import com.whichlicense.metadata.seeker.readme.ReadmeSeeker;
 
 module whichlicense.seeker.readme {
-    requires whichlicense.seeker;
+    requires transitive whichlicense.seeker;
     exports com.whichlicense.metadata.seeker.readme;
     provides MetadataSeeker with ReadmeSeeker;
 }

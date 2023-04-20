@@ -10,7 +10,7 @@ import com.whichlicense.metadata.seeker.rat.ApacheRatExclusionsSeeker;
 import com.whichlicense.metadata.seeker.rat.ApacheRatLicenseInfoStubSeeker;
 
 module whichlicense.seeker.rat {
-    requires whichlicense.seeker;
+    requires transitive whichlicense.seeker;
     exports com.whichlicense.metadata.seeker.rat;
     provides MetadataSeeker with ApacheRatExclusionsSeeker, ApacheRatLicenseInfoStubSeeker;
 }
